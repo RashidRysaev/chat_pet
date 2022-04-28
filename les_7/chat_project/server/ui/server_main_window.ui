@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>421</width>
+    <height>361</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>421</width>
+    <height>361</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>421</width>
+    <height>361</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Чатик недоделка - сервер</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="active_clients_table">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>31</y>
+      <width>411</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>181</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Список подключённых клиентов:</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>781</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>421</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="file_menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="config_btn"/>
+    <addaction name="separator"/>
+    <addaction name="exitAction"/>
+   </widget>
+   <widget class="QMenu" name="refresh_menu">
+    <property name="title">
+     <string>Обновить список</string>
+    </property>
+    <addaction name="refresh_button"/>
+   </widget>
+   <widget class="QMenu" name="users_menu">
+    <property name="title">
+     <string>Пользователи</string>
+    </property>
+    <addaction name="show_history_button"/>
+    <addaction name="show_login_history_button"/>
+    <addaction name="separator"/>
+    <addaction name="register_btn"/>
+    <addaction name="remove_btn"/>
+   </widget>
+   <addaction name="file_menu"/>
+   <addaction name="users_menu"/>
+   <addaction name="refresh_menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <action name="exitAction">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="register_btn">
+   <property name="text">
+    <string>Регистрация пользователя</string>
+   </property>
+  </action>
+  <action name="remove_btn">
+   <property name="text">
+    <string>Удаление пользователя</string>
+   </property>
+  </action>
+  <action name="show_history_button">
+   <property name="text">
+    <string>История клиентов</string>
+   </property>
+  </action>
+  <action name="show_login_history_button">
+   <property name="text">
+    <string>История входов</string>
+   </property>
+  </action>
+  <action name="config_btn">
+   <property name="text">
+    <string>Настройки сервера</string>
+   </property>
+  </action>
+  <action name="refresh_button">
+   <property name="text">
+    <string>Обновить список OnLine</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
